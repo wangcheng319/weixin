@@ -26,22 +26,24 @@ import Contact from  './ui/Contact/Contact'
 import Find from './ui/Find/Find'
 import Mine from './ui/Mine/Mine'
 
+import Strings from './strings'
+
 
 
 
 export default class weixin extends Component{
     constructor(props) {
         super(props);
-        this.state = {selectedTab: "微信"}
+        this.state = {selectedTab: Strings.HOME}
     }
 
     render(){
         return(
            <TabNavigator hidesTabTouch={true} tabbarstyle={styles.tab}>
-               {this._renderTabItem(HOME_NORMAL, HOME_SELECTED, "微信", <Home nav={this.props.nav}/>)}
-               {this._renderTabItem(CONTACT_NORMAL, CONTACT_SELECTED, "通讯录", <Contact nav={this.props.nav}/>)}
-               {this._renderTabItem(FIND_NORMAL, FIND_SELECTED, "发现", <Find nav={this.props.nav}/>)}
-               {this._renderTabItem(MINE_NORMAL, MINE_SELECTED, "我", <Mine nav={this.props.nav}/>)}
+               {this._renderTabItem(HOME_NORMAL, HOME_SELECTED, Strings.HOME, <Home nav={this.props.nav}/>)}
+               {this._renderTabItem(CONTACT_NORMAL, CONTACT_SELECTED, Strings.CONTACT, <Contact nav={this.props.nav}/>)}
+               {this._renderTabItem(FIND_NORMAL, FIND_SELECTED, Strings.FIND, <Find nav={this.props.nav}/>)}
+               {this._renderTabItem(MINE_NORMAL, MINE_SELECTED, Strings.MINE, <Mine nav={this.props.nav}/>)}
 
            </TabNavigator>
         )

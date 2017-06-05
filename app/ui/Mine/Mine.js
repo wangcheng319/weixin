@@ -6,6 +6,8 @@
 
 import React,{Component} from 'react';
 import {View,Text,Image} from 'react-native';
+
+import Images from './../../images/AllImages'
 import Styles from './MineStyles'
 
 
@@ -29,7 +31,7 @@ export  default  class  Mine extends  Component{
                <View style={Styles.top_column}>
                    <Image
                        style={{width:50,height:50}}
-                       source={require('./../../images/ic_photo.png')}/>
+                       source={Images.MINE_PHOTO}/>
 
                    <View style={Styles.top_column_center}>
                        <Text style={Styles.wallet_text}>
@@ -43,10 +45,10 @@ export  default  class  Mine extends  Component{
                    <View style={Styles.top_column_right}>
                        <Image
                            style={{width:20,height:20}}
-                           source={require('./../../images/ic_qrcode_default.png')}/>
+                           source={Images.MINE_QRCODE}/>
                        <Image
                            style={{width:12,height:12}}
-                           source={require('./../../images/ic_right.png')}/>
+                           source={Images.IC_RIGHT}/>
                    </View>
                </View>
 
@@ -56,14 +58,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.wallet}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_wallet.png')}/>
+                        source={Images.MINE_WALLET}/>
                     <Text style={Styles.wallet_text}>
                         钱包
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
 
@@ -72,14 +74,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.Collection}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_collect.png')}/>
+                        source={Images.MINE_COLLECT}/>
                     <Text style={Styles.wallet_text}>
                         收藏
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
 
@@ -88,14 +90,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.Collection}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_grally.png')}/>
+                        source={Images.MINE_ALBUM}/>
                     <Text style={Styles.wallet_text}>
                         相册
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
                 <View style={{backgroundColor:'#E7E6E9',height:0.6,marginLeft:32}}/>
@@ -103,14 +105,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.Collection}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_card.png')}/>
+                        source={Images.MINE_CARD}/>
                     <Text style={Styles.wallet_text}>
                         卡包
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
                 <View style={{backgroundColor:'#E7E6E9',height:0.6,marginLeft:32}}/>
@@ -118,14 +120,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.Collection}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_smile.png')}/>
+                        source={Images.MINE_SMILE}/>
                     <Text style={Styles.wallet_text}>
                         表情
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
                 <View style={{backgroundColor:'#E7E6E9',height:0.6,marginLeft:32}}/>
@@ -133,14 +135,14 @@ export  default  class  Mine extends  Component{
                 <View style={Styles.wallet}>
                     <Image
                         style={{width:30,height:30}}
-                        source={require('./../../images/ic_set.png')}/>
+                        source={Images.MINE_SET}/>
                     <Text style={Styles.wallet_text}>
                         设置
                     </Text>
                     <View  style={Styles.wallet_right}>
                         <Image
                             style={{width:12,height:12}}
-                            source={require('./../../images/ic_right.png')}/>
+                            source={Images.IC_RIGHT}/>
                     </View>
                 </View>
                 <View style={{backgroundColor:'#E7E6E9',height:0.6,marginLeft:32}}/>
