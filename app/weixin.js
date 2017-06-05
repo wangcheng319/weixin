@@ -74,9 +74,8 @@ const styles = StyleSheet.create({
         height: 20,
     },
     selectedTabText:{
-        color:'#1AAD19',
+        color:'#1AAD19'
     }
-
 })
 
 
