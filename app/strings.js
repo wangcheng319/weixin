@@ -9,6 +9,7 @@ const Strings = {
     FIND:'发现',
     CONTACT:'通讯录',
     HOME:'微信',
+    SEARCH:'搜索',
 
 
 

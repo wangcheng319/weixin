@@ -38,6 +38,9 @@ const AllImages = {
     MINE_SMILE:require('./ic_smile.png'),
     MINE_SET:require('./ic_set.png'),
 
+    /*通讯录*/
+    CONTACT_RECORD:require('./ic_contact_record.png'),
+
 
 
 };
