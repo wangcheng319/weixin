@@ -28,6 +28,19 @@ export default StyleSheet.create({
         fontSize:12,
         textAlign:'center',
         flex:1,
+        textAlignVertical:'center'
 
-    }
+    },
+
+    item_view:{
+        textAlignVertical:'center',
+        backgroundColor:'white',
+        color:'#060606',
+        fontSize:15,
+        flexDirection:'row',
+        alignItems:'center',
+        padding:10,
+    },
+
+
 })

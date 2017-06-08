@@ -10,7 +10,7 @@ import Styles from './ContactStyles'
 import Strings from '../../strings'
 import Images from './../../images/AllImages'
 
-
+var sections = [];
 
 export  default  class  Contact extends Component{
     // 构造
@@ -25,26 +25,61 @@ export  default  class  Contact extends Component{
 
     _renderItem = (info) => {
         var txt =  info.item.name;
-        return <Text
-            style={{height:30,textAlignVertical:'center',backgroundColor:'white',color:'#060606',fontSize:15}}>{txt}</Text>
+        return(
+        <View>
+            <View style={Styles.item_view}>
+                <Image style={{width:30,height:30}}
+                       source={Images.MINE_PHOTO}
+                />
+
+                <Text style={{marginLeft:10}}>
+                    {txt}
+                </Text>
+
+            </View>
+
+            <View style={{backgroundColor:'#E7E6E9',height:0.6,marginLeft:10}}/>
+
+        </View>
+
+
+            )
     }
 
     _sectionItem = (info) => {
-        var txt = 'key:' + info.section.key;
+        var txt = info.section.key;
         return <Text
-            style={{height:20,textAlign:'center',textAlignVertical:'center',backgroundColor:'#F1F0F6',color:'black',fontSize:13}}>{txt}</Text>
+            style={{height:20,textAlignVertical:'center',paddingLeft:10,backgroundColor:'#F1F0F6',color:'black',fontSize:13}}>{txt}</Text>
+    }
+
+
+    componentWillMount() {
+        /*A*/
+        var datasA = [];
+        for (var i=0;i<6;i++){
+            datasA.push({name:'阿三'});
+        }
+        sections.push({key:'A',data:datasA})
+
+        /*B*/
+        var datasB = [];
+        for (var i=0;i<6;i++){
+            datasB.push({name:'百三'});
+        }
+        sections.push({key:'B',data:datasB})
+
+
+        /*C*/
+        var datasC = [];
+        for (var i=0;i<6;i++){
+            datasC.push({name:'陈三'});
+        }
+        sections.push({key:'C',data:datasC})
     }
 
 
     render(){
-        var sections = [];
-        for (var i = 0; i < 10; i++) {
-            var datas = [];
-            for (var j = 0; j < 10; j++) {
-                datas.push({name: 'name:' + j});
-            }
-            sections.push({key: i, data: datas});
-        }
+
 
         return(
             <View style={Styles.view_container}>
